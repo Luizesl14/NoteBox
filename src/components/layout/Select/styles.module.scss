@@ -1,0 +1,25 @@
+.select {
+    margin-bottom: 1rem;
+    height: 55px;
+    border: 0;
+    color: var(--white);
+    background-color: var(--dark-900);
+    border-left: 2px solid var(--dark-900);
+    padding:  1rem;
+}
+
+.select::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.select:hover {
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, .5);
+    border-left: 2px solid var(--yellow-800);
+    transition: .1s;
+}
+
+.select option:hover {
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, .5);
+    border-left: 2px solid var(--yellow-800);
+    transition: .1s;
+}

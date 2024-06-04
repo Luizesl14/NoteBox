@@ -1,0 +1,19 @@
+.input {
+    margin-bottom: 1rem;
+    height: 55px;
+    border: 0;
+    color: var(--white);
+    background-color: var(--dark-900);
+    border-left: 2px solid var(--dark-900);
+    padding:  1rem;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.input:hover {
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, .5);
+    border-left: 2px solid var(--yellow-800);
+    transition: .1s;
+}

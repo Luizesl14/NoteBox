@@ -1,0 +1,38 @@
+.button{
+    margin-top: .6rem;
+    max-width: 600px;
+    background-color: var(--yellow-800);
+    border: 0;
+    padding:  0.6rem;
+    color: var(--dark-900);
+    border-radius: 0.3rem;
+    //transition: filter 0.2s;
+    cursor: pointer;
+
+    &[disabled]{
+        cursor: not-allowed;
+        svg{
+            animation: animate 1.5s infinite ;
+        }
+    }
+
+    &:hover {
+        //filter: brightness(1.20);
+        box-shadow: inset 0px 0px 15px rgba(66, 56, 0, 0.8);
+        transition: .3s;
+    }
+}
+
+.buttonText {
+    font-weight: bold;
+    color: var(--dark-900);
+}
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
